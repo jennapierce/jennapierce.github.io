@@ -44,7 +44,7 @@
         createPlatform(10, 100, 0.9); // left top
         createPlatform(650, 100, 0.9); // right top
         createPlatform(560, 197.5, 0.3); // helper right
-        createPlatform(500, 1, 0.2); // secret platform
+        createPlatform(530, 40, 0.2); // secret platform
 
 
 
