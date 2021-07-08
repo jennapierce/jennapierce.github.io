@@ -61,7 +61,9 @@
 			//////////////////////////////////////////////////////////////////
 			
 			var positionX = 0;	
-			var temp = 0;		
+			var temp = 0;	
+			var iteration = 5;	
+			var points = 0;
 
 			
 			/* 
@@ -76,9 +78,9 @@
 					positionX = temp;
 				} 
 				if (temp > boardWidth){
-					positionX -= 10;
+					positionX -= iteration;
 				}
-				temp += 10;
+				temp += iteration;
 				
 				if (temp >= 2*boardWidth){
 					temp = 0;
@@ -95,8 +97,14 @@
 			*/
 			function handleBoxClick() {
 				
+				positionX = 0;
+				temp = 0;
 
+				iteration += 5;
 
+				points++;
+				changeBoxText(points);
+			
 			};
 		})();
 	</script>
