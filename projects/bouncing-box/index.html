@@ -72,15 +72,15 @@
 			function update() {
 				
 
-				if (temp <= 800){
+				if (temp <= boardWidth){
 					positionX = temp;
 				} 
-				if (temp > 800){
+				if (temp > boardWidth){
 					positionX -= 10;
 				}
 				temp += 10;
 				
-				if (temp == 1600){
+				if (temp >= 2*boardWidth){
 					temp = 0;
 				}
 
@@ -95,7 +95,7 @@
 			*/
 			function handleBoxClick() {
 				
-				
+
 
 			};
 		})();
