@@ -64,6 +64,7 @@
 			var temp = 0;	
 			var iteration = 5;	
 			var points = 0;
+			//var speed = 10; 
 
 			
 			/* 
@@ -73,7 +74,7 @@
 			*/
 			function update() {
 				
-
+				//me solution
 				if (temp <= boardWidth){
 					positionX = temp;
 				} 
@@ -85,6 +86,18 @@
 				if (temp >= 2*boardWidth){
 					temp = 0;
 				}
+				
+			//////////////student solution//////////////// 
+			/*	if (positionX >= boardWidth){
+					speed += -1;
+				}	
+				
+				if (positionX < 0){
+					speed += 1;
+				}
+
+				positionX += speed;
+				*/
 
 				moveBoxTo(positionX);
 
@@ -98,9 +111,12 @@
 			function handleBoxClick() {
 				
 				positionX = 0;
+				
+				//student solution
+				//speed += 3;
+				
 				temp = 0;
-
-				iteration += 5;
+				iteration += 3;
 
 				points++;
 				changeBoxText(points);
