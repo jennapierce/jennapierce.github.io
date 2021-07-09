@@ -6,10 +6,13 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: teal;
-			font-size: 300%;
+  			background-position: center; /* Center the image */
+  			background-repeat: no-repeat; /* Do not repeat the image */
+  			background-size: cover; /* Resize the background image to cover the entire container */
+			width: 150px;
+			height: 100px;
+			background-image: url("https://media2.giphy.com/media/kFNiCbEJjH1FgPnIva/giphy.gif?cid=790b7611d86da1ffd29594df3d27c354b6fdbe247840095a&rid=giphy.gif&ct=s");			 
+			font-size: 100%;
 			text-align: center;
 			display: block;
 			position: absolute;
@@ -17,6 +20,8 @@
 			left: 400px;  /* <--- Change me! */
 		}
 		.board{
+			background-size: cover;
+			background-image: url("https://cdn.dribbble.com/users/1016207/screenshots/15509955/dribble_shot.png");
 			height: 100vh;
 		}
 	</style>
