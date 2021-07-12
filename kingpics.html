@@ -7,35 +7,73 @@
     <meta charset="utf-8">
     <style>
 
-    #site { 
-        overflow-x: hidden; 
-        background-color: #fbf6ef;
-    
-    }
-
-    a { 
-        background-color: #c2948a;
-        color: white; 
-    }
-
-    body{
+    nav{
         text-align: center;
-        font: helvetica;
-        color: white; 
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
     }
 
-    p{
-        text-align: left;
-        background-color: #6d9f71;
-
+    body {
+        background: #fbf6ef;
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
     }
 
+    /* navigation menu */
+    nav {
+        background: #c2948a;
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+    }
     h1 {
+        display: flex;
+        align-items: center;
         background-color: #f8c630;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none;
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
     }
 
-    h2{
-        background-color: #6cd4ff;
+    /* main container area beneath menu */
+    main {
+        background: #6d9f71;
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar-img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    #interests {
+        border: 4px silver ridge;
+        padding: 8px;
+    }
+    h2, h3 {
+        margin: 0px;
     }
 
     </style>
@@ -52,15 +90,15 @@
             <a href="kingpics.html">More Pics of King </a> &nbsp;
             <a href="portfolio.html">My Portfolio </a> &nbsp;
         </nav>
-
-        <h2> King's best moments</h2>
-            
+        <main>
+            <h2> King's best moments</h2>
+        
             <img src="https://pbs.twimg.com/media/E5ssbw8XIAccmng?format=jpg&name=large" width="400" height="600" alt="King ready for Mardi Gras">
             <img src="https://pbs.twimg.com/media/E5ssbzPXoAMGqbJ?format=jpg&name=large" width="400" height="600" alt="very lazy boy">        
             <img src="https://pbs.twimg.com/media/E5ssbviXMAELQTa?format=jpg&name=large" width="540" height="320" alt="King blinks due to sun">
             <img src="https://pbs.twimg.com/media/E5ssbviXoAM1Otl?format=jpg&name=large" width="500" height="600" alt="Kingy boy under a blanket">
             <img src="https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/104038635_3558387790857531_5565853411778168628_n.jpg?_nc_cat=109&_nc_rgb565=1&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=F8DzVSvKAooAX8qOCQE&_nc_ht=scontent-hou1-1.xx&oh=5745063cdb0222e9745c738c4c7c5d01&oe=60E97D42" alt="Kingy boy sleeps in his favorite chair">
-
+        </main>
 </body>
 </div>
 </html>

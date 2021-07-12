@@ -1,67 +1,105 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 
-<html lang="en">
+<html>
 
-<head>
-    <title> Kings site </title>
-    <meta charset="utf-8">
-    <style>
-
-    #site { 
-        overflow-x: hidden; 
-        background-color: #fbf6ef;
-    
-    }
-
-    a { 
-        background-color: #c2948a;
-        color: white; 
-    }
-
-    body{
-        text-align: center;
-        font: helvetica;
-        color: white; 
-    }
-
-    p{
-        text-align: left;
-        background-color: #6d9f71;
-
-    }
-
-    h1 {
-        background-color: #f8c630;
-    }
-
-    h2{
-        background-color: #6cd4ff;
-    }
-
-    </style>
-</head>
-<div id="wrapper">
+    <head>
+        <title> Kings site </title>
+        <style>
+            body {
+                background: #dbcfb0;
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+        
+            /* navigation menu */
+            nav {
+                background: #90b494;
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: white;
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        
+            /* main container area beneath menu */
+            main {
+                background: #ccd7e4;
+                display: flex;
+            }
+            .sidebar {
+                margin-right: 25px;
+                padding: 10px;
+            }
+            .sidebar-img {
+                width: 400px;
+            
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+            #interests {
+                border: 4px silver ridge;
+                padding: 8px;
+            }
+            h2, h3 {
+                margin: 0px;
+            }
+        </style>
+    </head>
 
     <body>
-        <header>
-        <h1>Hi, I'm King!</h1>
-        </header>
-        
-        <nav>
-            <a href="index.html"> Home </a> &nbsp;
-            <a href="kingpics.html">More Pics of King </a> &nbsp;
-            <a href="portfolio.html">My Portfolio </a> &nbsp;
-        </nav>
-
-        <h2> King's interests</h2>
-            
-            <p>Hi everyone, here is my dog King <3 <br> 
-            King likes to eat dirty socks <br>
-            King loves going on car rides <br>
-            King is a chihuahua, dachshund, and terrier mix!
-            </p>
-            <img src="https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/104038635_3558387790857531_5565853411778168628_n.jpg?_nc_cat=109&_nc_rgb565=1&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=F8DzVSvKAooAX8qOCQE&_nc_ht=scontent-hou1-1.xx&oh=5745063cdb0222e9745c738c4c7c5d01&oe=60E97D42" alt="Kingy boy sleeps in his favorite chair">
-
-</body>
-</div>
+        <!-- All content goes here -->
+        <div id="all-contents">
+            <nav>
+                <h1>King's Website!</h1>
+                <ul id="nav-ul">
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                 <!-- Sidebar section -->
+                <div class="sidebar">
+                    <img class="sidebar-img" src="https://scontent-atl3-2.xx.fbcdn.net/v/t1.6435-9/104038635_3558387790857531_5565853411778168628_n.jpg?_nc_cat=109&_nc_rgb565=1&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=h8CVRzKFvBAAX8xhe3K&_nc_ht=scontent-atl3-2.xx&oh=47886572c1f0f95727fa7ef199145664&oe=60ED71C2">
+                </div>
+                 <!-- Content section -->    
+                <div class="content">
+                    <h2>Meet King</h2>
+                    <p>Best dog in the world!</p>
+                    <h3>King's Interests</h3>
+                    <ul>
+                        <li>Eating dirty socks</li>
+                        <li>Having pointy ears</li>
+                        <li>Looking out of windows</li>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
