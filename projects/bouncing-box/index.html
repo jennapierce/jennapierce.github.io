@@ -24,6 +24,9 @@
 			background-image: url("https://cdn.dribbble.com/users/1016207/screenshots/15509955/dribble_shot.png");
 			height: 100vh;
 		}
+		.flip {
+			transform: scaleX(-1);
+		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
@@ -82,14 +85,17 @@
 				//me solution
 				if (temp <= boardWidth){
 					positionX = temp;
+					box.removeClass("flip");
 				} 
 				if (temp > boardWidth){
 					positionX -= iteration;
+					box.addClass("flip");
 				}
 				temp += iteration;
 				
 				if (temp >= 2*boardWidth){
 					temp = 0;
+					
 				}
 				
 			//////////////student solution//////////////// 
