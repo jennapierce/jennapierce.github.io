@@ -13,8 +13,6 @@ var sub2Avg = getTestGrades(sub2);
 var sub2Letter = calculateLetterGrade(sub2Avg, sub2);
 var sub2GPA = calculateGPA(sub2Letter, sub2);
 
-
-
 var sub3 = prompt("What is the third subject you are entering tests for?");
 document.write("<h2>" + sub3 + "</h2>")
 var sub3Avg = getTestGrades(sub3);
@@ -43,11 +41,11 @@ function getTestGrades(subject){
   var test4 = Number(prompt("What did you get on " + subject + " Test 4?"));
   
   var grade = (test1 + test2 + test3 + test4)/4;
-  document.write("<li>" + subject + " Test1: " + test1 + "</li>");
-  document.write("<li>" + subject + " Test2: " + test2) + "</li>";
-  document.write("<li>" + subject + " Test3: " + test3 + "</li>");
-  document.write("<li>" + subject + " Test4: " + test4 + "</li>");
-  document.write("Your average in " + subject + " is: " + grade);
+  document.write("<li>" + subject + " Test 1: " + test1 + "</li>");
+  document.write("<li>" + subject + " Test 2: " + test2) + "</li>";
+  document.write("<li>" + subject + " Test 3: " + test3 + "</li>");
+  document.write("<li>" + subject + " Test 4: " + test4 + "</li>");
+  document.write("<p>" + "Your average in " + subject + " is: " + grade + "</p>");
   return grade;
 
 }
