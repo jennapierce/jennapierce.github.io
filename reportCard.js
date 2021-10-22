@@ -1,4 +1,4 @@
-/*alert("Report Card Simulation!");
+alert("Report Card Simulation!");
 alert("Please enter your 4 test grades for each of your 4 classes!");
 
 var sub1 = prompt("What is the first subject you are entering tests for?");
@@ -25,10 +25,10 @@ var sub4Avg = getTestGrades(sub4);
 var sub4Letter = calculateLetterGrade(sub4Avg, sub4);
 var sub4GPA = calculateGPA(sub4Letter, sub4);
 
-console.log("---------------------------------------------------");
+document.write("---------------------------------------------------");
 
 calculateOverallGPA(sub1GPA, sub2GPA, sub3GPA, sub4GPA);
-*/
+
 
 //Function Defs Below
 
@@ -46,11 +46,11 @@ function getTestGrades(subject){
   var test4 = Number(prompt("What did you get on " + subject + " Test 4?"));
   
   var grade = (test1 + test2 + test3 + test4)/4;
-  console.log(subject + " Test1: " + test1);
-  console.log(subject + " Test2: " + test2);
-  console.log(subject + " Test3: " + test3);
-  console.log(subject + " Test4: " + test4);
-  console.log("Your average in " + subject + " is: " + grade);
+  document.write(subject + " Test1: " + test1);
+  document.write(subject + " Test2: " + test2);
+  document.write(subject + " Test3: " + test3);
+  document.write(subject + " Test4: " + test4);
+  document.write("Your average in " + subject + " is: " + grade);
   return grade;
 
 }
@@ -73,7 +73,7 @@ function calculateLetterGrade(grade, subject){
     letterGrade = ("F");
   }
   
-  console.log("Your letter grade for " + subject + " is: " + letterGrade);
+  document.write("Your letter grade for " + subject + " is: " + letterGrade);
   return letterGrade;
 }
 
@@ -151,11 +151,10 @@ function calculateGPA(grade, subject){
 function calculateOverallGPA(GPA1, GPA2, GPA3, GPA4){
   
   var cumulativeGPA = (GPA1 + GPA2 + GPA3 + GPA4)/4;
-  console.log("Your cumulative GPA is: " + cumulativeGPA);
+  document.write("Your cumulative GPA is: " + cumulativeGPA);
   alert("Your cumulative GPA is: " + cumulativeGPA);
   
 }
-
 
 
 
