@@ -62,6 +62,11 @@ var init = function (window) {
             //deleted because loop is better
 
             // TODO 9 : Iterate over the array
+            for (var i = 0; i < circles.length; i++) {
+                var eachValue = circles[i];
+                
+                // code to repeat using eachValue
+            }
 
            
             

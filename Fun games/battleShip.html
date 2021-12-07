@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Battle Ship </title>
+  <style>
+    h1 {
+      text-align: center;
+      border: 2px solid black;
+      padding: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+    <h1>Battle Ship</h1>
+    <script src="battleShip.js"></script>
+    <label for="guessRow"><br>Guess The Row</label>
+    <select id="guessRow" onChange = "updateGuessRow()">
+        <option id="a">A</option>
+        <option id="b">B</option>
+        <option id="c">C</option> 
+        <option id="d">D</option>
+        <option id="e">E</option>
+        <option id="f">F</option>
+        <option id="g">G</option>
+        <option id="h">H</option>
+        <option id="i">I</option>
+        <option id="j">J</option>
+    </select>
+    <label for="guessColumn"><br>Guess The Column</label>
+    <select id="guessColumn" onChange = "updateGuessColumn()">
+      <option id=1>1</option>
+      <option id=2>2</option>
+      <option id=3>3</option> 
+      <option id=4>4</option>
+      <option id=5>5</option>
+      <option id=6>6</option>
+      <option id=7>7</option>
+      <option id=8>8</option>
+      <option id=9>9</option>
+      <option id=10>10</option>
+  </select>
+  <form onchange = "play()" action="javascript:play()">
+    <label for="submit">Press to Play Game</label>
+    <input type="submit" id="submit"><br>
+  </form>
+  
+</body>
+</html>
