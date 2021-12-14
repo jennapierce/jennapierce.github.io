@@ -20,12 +20,13 @@ var init = function (window) {
         ////////////////////////////////////////////////////////////
         
         // TODO 1 : Declare and initialize our variables
-        var circle;
-        var circles = [];         
-        let numOfCircles = Number(prompt("How many circles do you want?"));
+        var circle;         // variable to hold a single circle when creating circles / iterating
+        var circles = [];   
+        var numCircl = Number(prompt("How many circles will you draw?"));
 
         // TODO 2 : Create a function that draws a circle 
         function drawCircle(){
+
             circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
             physikz.addRandomVelocity(circle, canvas, 10, 10);
             view.addChild(circle);
@@ -33,10 +34,9 @@ var init = function (window) {
         }
 
         // TODO 3 / 8 : Call the drawCircle() function 
-        for (var i = 0; i<numOfCircles; i++){
+        for (var i = 0; i < numCircl; i++){
             drawCircle();
-        }
-
+        }  
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -48,26 +48,17 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            for (var i = 0; i < circles.length; i++){
-                physikz.updatePosition( circles[i] );
+            for (var j = 0; j < numCircl; j++){
+                physikz.updatePosition(circles[j]);
             }
-
-            //deleted because loop is better
-
+            
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            for (var i = 0; i < circles.length; i++){
-                game.checkCirclePosition( circles[i] );
+            for (var k = 0; k < numCircl; k++){
+                game.checkCirclePosition(circles[k]);
             }
-
-            //deleted because loop is better
+            
 
             // TODO 9 : Iterate over the array
-            for (var i = 0; i < circles.length; i++) {
-                var eachValue = circles[i];
-                
-                // code to repeat using eachValue
-            }
-
            
             
         }
@@ -83,20 +74,18 @@ var init = function (window) {
             if ( circle.x > canvas.width ) {
                 circle.x = 0;
             }
-            
-            // TODO 7 : YOUR CODE STARTS HERE //////////////////////
-            
             if ( circle.x < 0 ) {
                 circle.x = canvas.width;
             }
-
-            if ( circle.y < 0 ) {
+            if( circle.y < 0){
                 circle.y = canvas.height;
             }
-
-            if ( circle.y > canvas.height ) {
+            if (circle.y > canvas.height){
                 circle.y = 0;
             }
+            // TODO 7 : YOUR CODE STARTS HERE //////////////////////
+            
+
 
             // YOUR TODO 7 CODE ENDS HERE //////////////////////////
         }
