@@ -6,26 +6,19 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-  			background-position: center; /* Center the image */
-  			background-repeat: no-repeat; /* Do not repeat the image */
-  			background-size: cover; /* Resize the background image to cover the entire container */
-			width: 150px;
-			height: 100px;
-			background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/14b167fe-add9-49c4-aa7a-d6cd826c46e1/d9lmgmu-7d8bc42c-aa0e-4206-8dc9-e142de7243d5.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE0YjE2N2ZlLWFkZDktNDljNC1hYTdhLWQ2Y2Q4MjZjNDZlMVwvZDlsbWdtdS03ZDhiYzQyYy1hYTBlLTQyMDYtOGRjOS1lMTQyZGU3MjQzZDUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zYwZmKFi2zRE5ONHhJyhv54YD5K82uo-yG0o7sLJhRs");			 
-			font-size: 100%;
+			width: 70px;
+			height: 70px;
+			background-color: teal;
+			font-size: 300%;
 			text-align: center;
+			user-select: none;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 400px;  /* <--- Change me! */
+			left: 0px;  /* <--- Change me! */
 		}
 		.board{
-			background-size: cover;
-			background-image: url("https://cdn.dribbble.com/users/1016207/screenshots/15509955/dribble_shot.png");
 			height: 100vh;
-		}
-		.flip {
-			transform: scaleX(-1);
 		}
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
@@ -68,11 +61,8 @@
 			/////////////////// YOUR CODE BELOW HERE /////////////////////////
 			//////////////////////////////////////////////////////////////////
 			
-			var positionX = 0;	
-			var temp = 0;	
-			var iteration = 5;	
-			var points = 0;
-			//var speed = 10; 
+			// TODO 2 - Variable declarations 
+			
 
 			
 			/* 
@@ -82,35 +72,6 @@
 			*/
 			function update() {
 				
-				//me solution
-				if (temp <= boardWidth){
-					positionX = temp;
-					box.removeClass("flip");
-				} 
-				if (temp > boardWidth){
-					positionX -= iteration;
-					box.addClass("flip");
-				}
-				temp += iteration;
-				
-				if (temp >= 2*boardWidth){
-					temp = 0;
-					
-				}
-				
-			//////////////student solution//////////////// 
-				// if (positionX >= boardWidth){
-				// 	speed *= -1;
-				// }	
-				
-				// if (positionX < 0){
-				// 	speed *= -1;
-				// }
-
-				// positionX += speed;
-				
-
-				moveBoxTo(positionX);
 
 			};
 
@@ -121,18 +82,8 @@
 			*/
 			function handleBoxClick() {
 				
-				
-				positionX = 0;
-				
-				////////student solution///////
-				//speed += 3;
-				
-				temp = 0;
-				iteration += 3;
 
-				points++;
-				changeBoxText(points);
-			
+
 			};
 		})();
 	</script>
