@@ -44,7 +44,45 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
+    createPlatform(30,650,100,4);
+    createPlatform(230,650,100,4);
+    createPlatform(430,650,100,4);
+    createPlatform(630,650,100,4);
+    createPlatform(830,650,100,4);
+    createPlatform(1030,650,100,4);
+    createPlatform(1230,650,100,4);
 
+    createPlatform(90,520,100,4);
+    createPlatform(290,520,100,4);
+    createPlatform(490,520,100,4);
+    createPlatform(690,520,100,4);
+    createPlatform(890,520,100,4);
+    createPlatform(1090,520,100,4);
+    createPlatform(1290,520,100,4);
+
+    createPlatform(30,390,100,4);
+    createPlatform(230,390,100,4);
+    createPlatform(430,390,100,4);
+    createPlatform(630,390,100,4);
+    createPlatform(830,390,100,4);
+    createPlatform(1030,390,100,4);
+    createPlatform(1230,390,100,4);
+
+    createPlatform(90,260,100,4);
+    createPlatform(290,260,100,4);
+    createPlatform(490,260,100,4);
+    createPlatform(690,260,100,4);
+    createPlatform(890,260,100,4);
+    createPlatform(1090,260,100,4);
+    createPlatform(1290,260,100,4);
+
+    createPlatform(30,130,100,4);
+    createPlatform(230,130,100,4);
+    createPlatform(430,130,100,4);
+    createPlatform(630,130,100,4);
+    createPlatform(830,130,100,4);
+    createPlatform(1030,130,100,4);
+    createPlatform(1230,130,100,4);
 
     
     // TODO 2
@@ -53,7 +91,15 @@ $(function () {
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
+    createCollectable("steve", 50, 50);
+    createCollectable("steve", 450, 50);
+    createCollectable("steve", 850, 50);
+    createCollectable("steve", 1250, 50);
 
+    createCollectable("steve", 50, 250);
+    createCollectable("steve", 450, 250);
+    createCollectable("steve", 850, 250);
+    createCollectable("steve", 1250,250);
 
 
     // TODO 3
@@ -61,6 +107,16 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
+
+    createCannon("right", 650, 2000);
+    createCannon("left", 400, 2000);
+    createCannon("right", 250, 2000);
+    createCannon("top", 200, 2000);
+    createCannon("bottom", 500, 2000);
+    createCannon("top", 700, 2000);
+    createCannon("bottom", 900, 2000);
+
+
 
 
 
