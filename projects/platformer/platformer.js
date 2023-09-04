@@ -96,11 +96,14 @@ $(function () {
     createCollectable("steve", 850, 50);
     createCollectable("steve", 1250, 50);
 
+    createCollectable("steve", 100, 200);
+    createCollectable("steve", 500, 200);
+    createCollectable("steve", 900, 200);
+
     createCollectable("steve", 50, 250);
     createCollectable("steve", 450, 250);
     createCollectable("steve", 850, 250);
     createCollectable("steve", 1250,250);
-
 
     // TODO 3
     // Create cannons
