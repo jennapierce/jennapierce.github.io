@@ -366,9 +366,9 @@ function deathOfPlayer() {
     canvas.height / 2
   );
   ctx.fillStyle = "black";
-  ctx.font = "800% serif";
+  ctx.font = "220% serif";
   ctx.fillText(
-    "You are dead",
+    "I won't sugarcoat it...you never stood a chance!",
     canvas.width / 4,
     canvas.height / 6 + canvas.height / 5,
     (canvas.width / 16) * 14
