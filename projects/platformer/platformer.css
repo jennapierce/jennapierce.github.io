@@ -3,9 +3,11 @@ body {
 }
 
 canvas {
-  background-color: lightgray;
+  background-image: url("https://cdn.vox-cdn.com/thumbor/Cg0gE9iI5gozWezgtz13zz3sERQ=/0x0:1920x1080/2400x1356/filters:focal(960x540:961x541)/cdn3.vox-cdn.com/uploads/chorus_asset/file/9345219/baroness_von_bon_bon.png");
+  background-size: cover;
 }
 
-img {
+  img {
+
   display: none;
 }
