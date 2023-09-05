@@ -358,7 +358,7 @@ function projectileCollision() {
 }
 
 function deathOfPlayer() {
-  ctx.fillStyle = "grey";
+  ctx.fillStyle = "pink";
   ctx.fillRect(
     canvas.width / 4,
     canvas.height / 6,
